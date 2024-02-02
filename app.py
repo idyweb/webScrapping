@@ -12,9 +12,9 @@ app.config['SQLALCHEMY_POOL_SIZE'] = 20
 db.init_app(app)
 migrate = Migrate(app, db)
 
-session = HTMLSession()
+# session = HTMLSession()
 
-r = session.get('https://www2.hm.com/en_gb/index.html')
+# r = session.get('https://www2.hm.com/en_gb/index.html')
 
 @app.route('/scrape_and_store', methods=['GET'])
 def scrape_and_store():
